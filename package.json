@@ -1,0 +1,25 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "description": "a simple to do app",
+  "homepage": "https://github.com/DreJayy/to-do-app#readme",
+  "bugs": {
+    "url": "https://github.com/DreJayy/to-do-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DreJayy/to-do-app.git"
+  },
+  "license": "ISC",
+  "author": "DreJayy",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-passer": "^1.0.0",
+    "ejs": "^5.0.2",
+    "express": "^5.2.1"
+  }
+}
