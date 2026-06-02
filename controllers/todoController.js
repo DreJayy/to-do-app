@@ -13,8 +13,15 @@ module.exports = (app) => {
     })
 
     app.post('/todo', urlencodedParser, (req, res) => {
+        if (!req.body.item) {
+            return res
+                .status(400)
+                .send('Todo required');
+        }
+        
         data.push(req.body);
         res.render('todo', {todos: data});
+
         // res.json(data);
         console.log(req.body);
     })
